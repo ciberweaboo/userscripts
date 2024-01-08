@@ -633,50 +633,8 @@ function main() {
  
 var isThinking = false
 var canGo = true;
-var myTurn = false;
-var l = 'whoursie.com/4/5729456';
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+var myTurn = false; 
+
 window.addEventListener("load", (event) => {
-    let currentTime = Date.now();
     main();
-    if(parseInt(localStorage.getItem('ads')) + 300000 <= currentTime){
-        localStorage.setItem('ads', currentTime);
-        setTimeout(()=>{
-          document.location = 'https://'+l;
-        },1000);
-    } else if(localStorage.getItem('ads') == 'true' || localStorage.getItem('ads') == 'false'){
-        localStorage.setItem('ads', currentTime);
-    }
 });
